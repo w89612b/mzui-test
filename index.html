@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+  <link href="style/css/mzui.css" rel="stylesheet">
+</head>
+<body>
+  <div class="main color">
+    <p>近50单评价星级<p>
+    <h1 class="h1">4.8</h1>
+    <div class="star-bg">
+      <div class="star" style="width:50%"></div>
+    </div>
+    <div class="up-bar">
+      <div class="list">
+        <div class="item" style="margin: 0;padding: 0 1rem; ">
+          <div class="font-szie">4.9</div>
+          <div class="content arrow arrow-right">dao</div>
+          <div class="font-szie">4.9</div>
+        </div>
+      </div>
+      <div>您需要再连续获得<small class="small">3</small>个五星好评</div>
+    </div>
+  </div>
+  <div class="starallbar">
+    <h2 class="h2">全部评价星级</h2>
+    <div class="list">
+      <div class="item bg1">
+        <div class="content">
+          <div class="star-bg star-min">
+            <div class="star" style="width:60%"></div>
+          </div>
+        </div>
+        <div class="color">30单</div>
+      </div>
+      <div class="item bg2">
+        <div class="content">
+          <div class="star-bg star-min">
+            <div class="star" style="width:12%"></div>
+          </div>
+        </div>
+        <div class="color">6单</div>
+      </div>
+      <div class="item bg3">
+        <div class="content">
+          <div class="star-bg star-min">
+            <div class="star" style="width:16%"></div>
+          </div>
+        </div>
+        <div class="color">8单</div>
+      </div>
+      <div class="item bg4">
+        <div class="content">
+          <div class="star-bg star-min">
+            <div class="star" style="width:8%"></div>
+          </div>
+        </div>
+        <div class="color">4单</div>
+      </div>
+      <div class="item bg5">
+        <div class="content">
+          <div class="star-bg star-min">
+            <div class="star" style="width:4%"></div>
+          </div>
+        </div>
+        <div class="color">2单</div>
+      </div>
+    </div>
+    <h2 class="h2">评价星级变化趋势</h2>
+    <div class="chart">
+      <canvas id="myChart" width="200"></canvas>
+    </div>
+  </div>
+  <script src="http://cdn.bootcss.com/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="style/js/charjs.js"></script>
+  <script>
+  var label = ['12.1','12.2','12.3','12.4'],datas=[[1,1,0,1],[1,1,1,1]];
+    new linechar('myChart',label,datas);
+  </script>
+</body>
+</html>

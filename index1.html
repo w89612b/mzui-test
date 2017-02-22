@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+  <link href="style/css/mzui.css" rel="stylesheet">
+</head>
+<body class="recording">
+  <h1 class="row-h1 text-center">服务分</h1>
+  <div style="width:141px;height:141px;margin:0 auto;">
+  <svg style="width:100%;height:100%">
+      <text style="fill:black;text-anchor: middle;pointer-events: auto;" font-size="70" x="50%" y="50%" dy=".3em">100</text>
+      <circle cx="70" cy="70" r="65" stroke-width="10" stroke="#bcc4d0" fill="none"></circle>
+      <circle id="c1" cx="70" cy="70" r="65" stroke-width="10" stroke="#ff8800" fill="none" style="transform:rotate(-90deg) translate(-140px, 0px)" stroke-dasharray=""></circle>
+    </svg>
+  </div>
+  <div style="margin:1rem 0">
+  <p class="stress" style="font-size:1.3em">您的星级超越了95%的师傅</p>
+  <p class="stress">当前尊享<small class="textsmall">【优先派单】</small>特权</p>
+  </div>
+  <p class="text-center"><a class="doc_description" href="doc-description.html"><small class="avatar circle outline textsmall">!</small>服务分解读</a></p>
+
+  <div class="list service-points">
+    <div class="item multi-lines with-avatar">
+      <div class="content">
+        <div>
+          <b>及时预约率：90%</b>
+          <a class="pull-right muted">敬请期待></a>
+        </div>
+        <div class="progress-h1">
+          <div class="progress-sub" style="width:90%"></div>
+        </div>
+      </div>
+    </div>
+    <div class="item multi-lines with-avatar">
+      <div class="content">
+        <div>
+          <b>及时上门率：60%</b>
+          <a class="pull-right muted">敬请期待></a>
+        </div>
+        <div class="progress-h1">
+          <div class="progress-sub" style="width:60%"></div>
+        </div>
+      </div>
+    </div>
+    <div class="item multi-lines with-avatar">
+      <div class="content">
+        <div>
+          <b>核销完成率：80%</b>
+          <a class="pull-right muted">敬请期待></a>
+        </div>
+        <div class="progress-h1">
+          <div class="progress-sub" style="width:80%"></div>
+        </div>
+      </div>
+    </div>
+    <div class="item multi-lines with-avatar">
+      <div class="content">
+        <div>
+          <b>客户好评率：30%</b>
+          <a href="index.html" class="pull-right">查看详情></a>
+        </div>
+        <div class="progress-h1">
+          <div class="progress-sub" style="width:30%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="row-h1 text-center">考核记录</h1>
+  <div class="weigui-boxp">
+    <div class="row relative weigui-box">
+      <span class="weigui-span">您共有</span>
+      <div class="cell-6 text-center weigui-right">
+        <p class="weigui"><b>2次</b><br>普通违规</p>
+      </div>
+      <div class="cell-6 text-center">
+        <p class="weigui"><b>2次</b><br>严重违规</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-center"><a class="doc_description" href="doc.html"><small class="avatar circle outline textsmall">!</small>考核说明</a></p>
+  <div class="list recording">
+    <div class="item multi-lines with-avatar row-padding">
+      <div class="content row-bg">
+        <span class="title"><small class="label  new">new</small>严重违规严重违规严重违规严重违规严重违规严重违规严重违规严重违规严重违规严重违规严重违规严重违规严重违规严重违规严重违规严重违规严重违规严重违规严重违规严重违</span>
+        <div>
+          <small class="text-red">严重违规</small>
+          <div class="pull-right muted">2017-2-10</div>
+        </div>
+      </div>
+    </div>
+    <div class="item multi-lines with-avatar row-padding">
+      <div class="content row-bg">
+        <span class="title">普通违规普通违规普通违规普通违规普通违规普通违规普通违规普通违规普通违规普通违规普通违规普通违规普通违规普通违规普通违规普通违规普通违规普通违规普通违规普通违规</span>
+        <div>
+          <small class="text-yellow">普通违规</small>
+          <div class="pull-right muted">2017-2-10</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p  class="text-center"><a href="recording.html">查看全部记录></a></p>
+  <script>
+	var circle = document.getElementById("c1");
+	var percent = .5, perimeter = Math.PI * 2 * 65;
+  circle.setAttribute('stroke-dasharray', perimeter * percent + " " + perimeter * (1- percent));
+	</script>
+</body>
+</html>
